@@ -11,8 +11,10 @@ namespace Emlak.BLL.Repository
     {
         protected internal static EmlakContext dbContext;
 
+
         public List<T> GetAll()
         {
+
 
             dbContext = new EmlakContext();
             return dbContext.Set<T>().ToList();
