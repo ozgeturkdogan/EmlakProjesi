@@ -13,6 +13,7 @@ namespace Emlak.BLL.Repository
 
         public List<T> GetAll()
         {
+
             dbContext = new EmlakContext();
             return dbContext.Set<T>().ToList();
         }
